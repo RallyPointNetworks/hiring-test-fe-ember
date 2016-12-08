@@ -25,16 +25,19 @@ export default function() {
   */
   this.namespace = 'api';
 
-  this.get('/customers', function(db, request) {
+  this.get('/customers', function({ customers }, request) {
     let { query } = request.queryParams;
     if (query) {
-      let filterRegEx = new RegExp(query.toUpperCase(), 'gi');
-      return db.customers.filter((customer) => {
-        let condensedForm = `${customer.firstName}${customer.lastName}${customer.dueMonthly}`;
-        filterRegEx.test(condensedForm);
+      let filterRegEx = new RegExp(query.toUpperCase(), 'i');
+      let filteredCustomers = customers.all().filter((customer) => {
+          let condensedForm = `${customer.firstName}${customer.lastName}${customer.dueMonthly}`;
+          let matches = condensedForm.match(filterRegEx);
+          return matches;
       });
+      let count = filteredCustomers.length;
+      return filteredCustomers;
     } else {
-      return db.customers;
+      return customers.all();
     }
   });
 }
