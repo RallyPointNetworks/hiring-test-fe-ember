@@ -1,0 +1,73 @@
+<div class="index-page">
+  <h1>Welcome!</h1>
+
+  <p>Thanks for taking our test. Now that you have your environment up and running, you're ready to begin.</p>
+
+  <p>For this exercise, we have a small database of customers, with a firstName, lastName, and dueMonthly fields, which represents the amount of money they pay us each month."</p>
+
+  <h3>Fields</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>Field Name</th>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td valign="top">firstName</td>
+        <td valign="top">String</td>
+        <td valign="top">First name of customer</td>
+      </tr>
+      <tr>
+        <td valign="top">lastName</td>
+        <td valign="top">String</td>
+        <td valign="top">Last name of customer</td>
+      </tr>
+      <tr>
+        <td valign="top">dueMonthly</td>
+        <td valign="top">Integer</td>
+        <td valign="top">Amount in dollars (rounded) the customer owes us each month.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p>Your task is a simple one, create a type-as-you-go search for customers.</p>
+
+  <h3>Requirements</h3>
+
+  <ul>
+    <li>Create a new route to search for customers.</li>
+    <li>Use ember-data to create models that expose customer data to the application.</li>
+    <li>You must be able to search all three fields.</li>
+    <li>How the results are displayed and styling rules are, for this exercise, up to you.</li>
+    <li>Tests are not required. Which isn't to say you shouldn't write them. How many tests? Up to you.</li>
+  </ul>
+
+  <h3>Note:</h3>
+  <ul>
+    <li>Your ability to deal with open ended requriements is part of the test.</li>
+    <li>Your ability to research problems and find effective solutions is part of the test.</li>
+    <li>There are plugins that might make this easier. Your ability to know what they are or figure out what they are is part of the test.</li>
+  </ul>
+
+  <p>This test runs on an ember-cli-mirage server. It is self-contained, and if you are seeing this page, already running.</p>
+
+  <p>There is an api '/api/customers'. It takes one query param, 'query'. So a sample request from your widget would be:</p>
+
+  <pre class="code">
+    GET /api/customers?query=bob
+  </pre>
+
+  <p>You need to provide the infrastructure to make the requests and manage the data in ember. Please do use ember-data to complete the task.</p>
+  <p>At RallyPoint, we regularly attennd the Boston Ember Meetup and try to stay up to date on the latest recommendations for the platform. You can use whatever approach works best for you, but if you are up to date, we will certainly notice and take it into account.</p>
+
+  <p>Good luck!</p>
+
+  <h3>For your consideration:</h3>
+  <ul>
+    <li>Most work we do is usually specced out design wise very well, and you will not be left to make design decisions. The purpose of keeping this open ended here is to let those of you with design chops the opportunity to show them off. Lack of design skills is <em>not</em> a disqualifying factor.</li>
+    <li>Although you will not be forced to do design work, your input will be welcomed and appreciated. Ours is a broad, open team. Everyone has a voice. Feel free to have a voice about your efforts, and about this test. We're all in this together. That's a RallyPoint core value.</li>
+  </ul>
+</div>
