@@ -1,7 +1,10 @@
-# Hiring-test-fe-ember
+# RallyPoint Ember Test
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This is an ember project designed to reveal the ember skills and inclinations of front end developers interested in working at RallyPoint, and who have indicated they have used ember before.
+
+Please fork this repository and clone it to your machine, and follow the instructions below.
+
+When the app is running, you will get further instructions on how to proceed.
 
 ## Prerequisites
 
@@ -12,12 +15,13 @@ You will need the following things properly installed on your computer.
 * [Bower](http://bower.io/)
 * [Ember CLI](http://ember-cli.com/)
 * [PhantomJS](http://phantomjs.org/)
+* [Yarn](https://yarnpkg.com/)
 
 ## Installation
 
 * `git clone <repository-url>` this repository
 * change into the new directory
-* `npm install`
+* `yarn`
 * `bower install`
 
 ## Running / Development
@@ -33,15 +37,6 @@ Make use of the many generators for code, try `ember help generate` for more det
 
 * `ember test`
 * `ember test --server`
-
-### Building
-
-* `ember build` (development)
-* `ember build --environment production` (production)
-
-### Deploying
-
-Specify what it takes to deploy your app.
 
 ## Further Reading / Useful Links
 
