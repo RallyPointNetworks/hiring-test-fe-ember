@@ -7,7 +7,6 @@ export default Component.extend({
   actions: {
     updateResults() {
       let query = get(this, 'query');
-      debugger;
       this.attrs.updateResults(query);
     }
   }
