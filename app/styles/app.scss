@@ -36,3 +36,46 @@ body {
     }
   }
 }
+
+.customer-search-page {
+  width: 400px;
+  margin: 0 auto;
+  input[type=text] {
+    font-size: 24px;
+    padding: 3px 10px;
+    width: 380px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+
+  ul {
+    margin-left: 0;
+    padding-left: 0;
+    li {
+      display: block;
+      list-style: none;
+      clear: both;
+      border-bottom: 1px solid #ccc;
+      padding: 10px;
+      font-family: sans-serif;
+      width: 100%;
+      font-size: 16px;
+      height: 20px;
+      margin-bottom: 10px;
+      margin-left: 0;
+      padding-left: 0;
+
+      .name {
+        float: left;
+        color: black;
+      }
+
+      .due {
+        float: right;
+        color: green;
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+<ul>
+  {{#each results as |customer|}}
+    <li>
+      <div class="due">${{customer.dueMonthly}}</div>
+      <div class="name">{{customer.firstName}} {{customer.lastName}}</div>
+    </li>
+  {{else}}
+    <li><em>No Results</em></li>
+  {{/each}}
+</ul>
