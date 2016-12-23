@@ -6,6 +6,8 @@ Please fork this repository and clone it to your machine, and follow the instruc
 
 When the app is running, you will get further instructions on how to proceed.
 
+For the non-Ember version, please see https://github.com/RallyPointNetworks/hiring-test-fe-no-ember.
+
 ## Prerequisites
 
 You will need the following things properly installed on your computer.
