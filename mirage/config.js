@@ -34,7 +34,6 @@ export default function() {
           let matches = condensedForm.match(filterRegEx);
           return matches;
       });
-      let count = filteredCustomers.length;
       return filteredCustomers;
     } else {
       return customers.all();
